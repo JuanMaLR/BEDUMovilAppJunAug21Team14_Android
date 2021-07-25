@@ -2,10 +2,10 @@
 
 Project definition:
 This project intends to mimic Amazon app but with reduced complexity and functionality. The main operations a user will be able to perform are: 
-1.- Be able to register an user
-2.- Be able to login an user
-3.- Be able to upload products for sale
-4.- Be able to buy products (complete checkout process*)
+1. Be able to register an user
+2. Be able to login an user
+3. Be able to upload products for sale
+4. Be able to buy products (complete checkout process*)
 
 *The complete checkout process includes:
 - Adding an item to the cart
