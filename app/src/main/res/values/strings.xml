@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">Amazon Project</string>
-    <string name="full_name">Name(s)</string>
-    <string name="last_name">Last Name(s)</string>
-    <string name="phone_number">Phone number</string>
-    <string name="email">Email address</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
     <string name="login_button">Login</string>
+    <string name="forgot_password">Forgot password?</string>
 </resources>
