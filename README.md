@@ -11,7 +11,6 @@ This project intends to mimic Amazon app but with reduced complexity and functio
 - Adding an item to the cart
 - View the cart and the total
 - Pay for the product
-- Monitor the product delivery
 
 Code rules:
 
