@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".CardDetailsActivity">
+
+    <ImageView
+        android:id="@+id/card_details_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/app_logo_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nozama" />
+
+    <TextView
+        android:id="@+id/card_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/user_card_information"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_details_logo" />
+
+    <EditText
+        android:id="@+id/card_details_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:autofillHints="@string/credit_card_name"
+        android:ems="10"
+        android:hint="@string/credit_card_name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <EditText
+        android:id="@+id/card_details_digits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:autofillHints="@string/credit_card_digits"
+        android:ems="10"
+        android:hint="@string/credit_card_digits"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <EditText
+        android:id="@+id/card_details_expiration_date_month"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:autofillHints="@string/credit_card_expiration_date_month"
+        android:ems="10"
+        android:hint="@string/credit_card_expiration_date_month"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/card_details_expiration_date_year"
+        app:layout_constraintEnd_toStartOf="@+id/card_details_expiration_date_year"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/card_details_expiration_date_year"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginRight="50dp"
+        android:autofillHints="@string/credit_card_expiration_date_year"
+        android:ems="10"
+        android:hint="@string/credit_card_expiration_date_year"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/card_details_cvc"
+        app:layout_constraintEnd_toStartOf="@+id/card_details_cvc"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_details_expiration_date_month" />
+
+    <EditText
+        android:id="@+id/card_details_cvc"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="50dp"
+        android:autofillHints="@string/credit_card_cvc"
+        android:ems="10"
+        android:hint="@string/credit_card_cvc"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_details_expiration_date_year"
+        tools:layout_editor_absoluteY="377dp" />
+
+    <Button
+        android:id="@+id/card_details_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="@string/add_credit_card_information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

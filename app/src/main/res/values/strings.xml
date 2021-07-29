@@ -4,4 +4,39 @@
     <string name="password">Password</string>
     <string name="login_button">Login</string>
     <string name="forgot_password">Forgot password?</string>
+
+    <string name="new_account_title">Create new account</string>
+    <string name="full_name">Full Name</string>
+    <string name="password_confirm">Repeat your password</string>
+    <string name="create_account">Create account</string>
+    <string name="app_logo_description">App logo</string>
+
+    <string name="new_product_title">Create new product</string>
+    <string name="product_name">Product name</string>
+    <string name="category">Category</string>
+    <string name="status">Status</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="user_shipping_information">Shipping information</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="country">Country</string>
+    <string name="phone_number">Phone number</string>
+    <string name="create_product">Create Product</string>
+    <string name="add_shipping_information">Add Shipping Information</string>
+    <string name="user_card_information">Card Details</string>
+    <string name="credit_card_name">Cardholder name</string>
+    <string name="credit_card_digits">Card numbers</string>
+    <string name="credit_card_cvc">CVC</string>
+    <string name="add_credit_card_information">Add Card Information</string>
+    <string name="credit_card_expiration_date_month">Month</string>
+    <string name="credit_card_expiration_date_year">Year</string>
+    <string name="order_details_information">Order Details</string>
+    <string name="shipping_date">Shipping Date: </string>
+    <string name="tracking_number">Tracking Number: </string>
+    <string name="order_status">Order Status: </string>
+    <string name="thank_you_message">Thank you for your purchase!</string>
+    <string name="back_to_main">Back to main menu</string>
 </resources>

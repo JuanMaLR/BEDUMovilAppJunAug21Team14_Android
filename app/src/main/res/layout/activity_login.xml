@@ -9,13 +9,13 @@
     android:background="@color/screen_background">
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/login_email"
         style="@style/editText"
         android:inputType="text"
         android:drawableLeft="@drawable/user"
         android:drawablePadding="12dp"
         android:hint="@string/email"
-        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintBottom_toTopOf="@+id/login_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/login_password"
         style="@style/editText"
         android:inputType="textPassword"
         android:drawableLeft="@drawable/password"
@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/login_email" />
 
     <Button
         android:id="@+id/login_button"
@@ -42,14 +42,16 @@
         android:text="@string/login_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/login_password"
         android:layout_marginTop="25dp"
         android:backgroundTint="@color/button_login_background"
         android:textColor="@color/button_login_text"/>
 
     <ImageView
-        android:id="@+id/logo"
-        app:layout_constraintBottom_toTopOf="@+id/email"
+        android:id="@+id/login_logo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/login_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,11 +59,11 @@
         android:src="@drawable/nozama"/>
 
     <TextView
-        android:id="@+id/forgot_password"
+        android:id="@+id/login_forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/forgot_password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
