@@ -4,4 +4,17 @@
     <string name="password">Password</string>
     <string name="login_button">Login</string>
     <string name="forgot_password">Forgot password?</string>
+
+    <string name="new_account_title">Create new account</string>
+    <string name="full_name">Full Name</string>
+    <string name="password_confirm">Repeat your password</string>
+    <string name="create_account">Create account</string>
+    <string name="app_logo_description">App logo</string>
+
+    <string name="new_product_title">Create new product</string>
+    <string name="product_name">Product name</string>
+    <string name="category">Category</string>
+    <string name="status">Status</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
 </resources>

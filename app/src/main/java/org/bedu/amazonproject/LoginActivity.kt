@@ -17,8 +17,8 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         //Get elements reference once they have been rendered
-        email = findViewById(R.id.email)
-        password = findViewById(R.id.password)
+        email = findViewById(R.id.login_email)
+        password = findViewById(R.id.login_password)
         loginButton = findViewById(R.id.login_button)
 
         //Add listener to the login button
