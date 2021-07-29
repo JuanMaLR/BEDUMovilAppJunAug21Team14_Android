@@ -48,14 +48,13 @@
         android:textColor="@color/button_login_text"/>
 
     <ImageView
-        android:id="@+id/login_successful"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:id="@+id/logo"
         app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/nozama"/>
 
     <TextView
         android:id="@+id/forgot_password"
