@@ -3,9 +3,9 @@ package org.bedu.amazonproject
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class CheckoutActivity : AppCompatActivity() {
+class CardDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_shipping_info)
+        setContentView(R.layout.activity_card_details)
     }
 }
