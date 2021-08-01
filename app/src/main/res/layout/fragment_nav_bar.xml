@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:layout_gravity="top"
+    tools:context=".NavBarFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detailView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <View
+            android:id="@+id/nav_bar_background"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#9C27B0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/nav_bar_logo"
+            android:layout_width="105dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/nozama"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/app_logo_description" />
+
+        <SearchView
+            android:id="@+id/nav_bar_search"
+            android:layout_width="170dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/nav_bar_logo"
+            app:layout_constraintEnd_toStartOf="@+id/nav_bar_shopping_cart"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/nav_bar_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            android:showAsAction="collapseActionView|ifRoom"
+            android:actionViewClass="android.widget.SearchView" />
+
+        <ImageView
+            android:id="@+id/nav_bar_shopping_cart"
+            android:layout_width="32dp"
+            android:layout_height="26dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/cart"
+            app:layout_constraintBottom_toBottomOf="@+id/nav_bar_search"
+            app:layout_constraintEnd_toEndOf="@+id/nav_bar_background"
+            android:contentDescription="@string/app_shopping_cart_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:layout_gravity="bottom"
+    tools:context=".FooterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detailView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <View
+            android:id="@+id/footer_background"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#9C27B0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="-26dp" />
+
+        <ImageView
+            android:id="@+id/footer_home_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/footer_account_icon"
+            app:layout_constraintStart_toEndOf="@+id/footer_add_product_icon"
+            app:layout_constraintTop_toTopOf="@+id/footer_background"
+            android:contentDescription="@string/app_home_description" />
+
+        <ImageView
+            android:id="@+id/footer_add_product_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/products"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/footer_background"
+            android:contentDescription="@string/app_add_product_description" />
+
+        <ImageView
+            android:id="@+id/footer_account_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/user_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/footer_background"
+            app:layout_constraintVertical_bias="0.51"
+            android:contentDescription="@string/app_user_profile_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

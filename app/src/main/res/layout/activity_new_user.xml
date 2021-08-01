@@ -8,16 +8,16 @@
     tools:context=".NewUserActivity">
 
     <ImageView
-        android:id="@+id/complement_user_information_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/nozama"
-        android:contentDescription="@string/app_logo_description" />
+       android:id="@+id/register_product_logo"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="32dp"
+       android:contentDescription="@string/app_logo_description"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.496"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:srcCompat="@drawable/nozama" />
 
     <TextView
         android:id="@+id/register_product_title"
@@ -29,7 +29,7 @@
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/complement_user_information_logo" />
+        app:layout_constraintTop_toBottomOf="@+id/register_product_logo" />
 
     <EditText
         android:id="@+id/register_user_name"
