@@ -4,20 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:paddingHorizontal="20dp"
     tools:context=".CardDetailsActivity">
 
-    <ImageView
-        android:id="@+id/card_details_logo"
+    <fragment
+        android:id="@+id/nav_bar"
+        class="org.bedu.amazonproject.NavBarFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:contentDescription="@string/app_logo_description"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/nozama" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/card_details_title"
@@ -29,7 +26,7 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_details_logo" />
+        app:layout_constraintTop_toBottomOf="@+id/nav_bar" />
 
     <EditText
         android:id="@+id/card_details_name"
@@ -106,6 +103,15 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="52dp"
         android:text="@string/add_credit_card_information"
+        app:layout_constraintBottom_toBottomOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="@+id/footer"
+        app:layout_constraintStart_toStartOf="@+id/footer" />
+
+    <fragment
+        android:id="@+id/footer"
+        class="org.bedu.amazonproject.FooterFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
